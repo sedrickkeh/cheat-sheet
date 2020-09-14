@@ -15,3 +15,12 @@ List of useful commands I've googled way too many times
 `unzip file.zip`
 
 `unzip file.zip -d destination_folder`
+
+
+**Virtual Environments**
+
+venv:
+`python3 -m venv /path/to/new/virtual/environment`
+
+conda:
+`conda create -n env python=3.6 pip`
