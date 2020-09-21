@@ -24,3 +24,11 @@ venv:
 
 conda:
 `conda create -n env python=3.6 pip`
+
+**Github**
+
+Setting username and user email:
+
+`git config user.name (your_username_here)`
+
+`git config user.email (your_email_here)`
