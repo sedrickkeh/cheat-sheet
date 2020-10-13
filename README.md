@@ -2,7 +2,9 @@
 List of useful commands I've googled way too many times
 
 **Check size of file in command line**\
-`du -sh (filename)`
+`du -sh (filename)`\
+**Check disk usage**\
+`df -hl`\
 
 
 **Untar / Unzip**\
