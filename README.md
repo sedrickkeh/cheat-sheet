@@ -4,7 +4,7 @@ List of useful commands I've googled way too many times
 **Check size of file in command line**\
 `du -sh (filename)`\
 **Check disk usage**\
-`df -hl`\
+`df -hl`
 
 
 **Untar / Unzip**\
@@ -23,7 +23,7 @@ conda:
 **Github**\
 Setting username and user email:\
 `git config user.name (your_username_here)`\
-`git config user.email (your_email_here)`\
+`git config user.email (your_email_here)`
 
 Creating repo:\
 `git remote add origin [git-url-here]`\
