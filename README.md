@@ -23,8 +23,11 @@ conda:
 **Github**\
 Setting username and user email:\
 `git config user.name (your_username_here)`\
-`git config user.email (your_email_here)`
+`git config user.email (your_email_here)`\
 
+Creating repo:\
+`git remote add origin [git-url-here]`\
+`git push --set-upstream origin master`
 
 **Python os**\
 Create path if doesn't exist: 
