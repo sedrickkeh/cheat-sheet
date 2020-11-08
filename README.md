@@ -4,7 +4,9 @@ List of useful commands I've googled way too many times
 **Check size of file in command line**\
 `du -sh (filename)`\
 **Check disk usage**\
-`df -hl`
+`df -hl`\
+**Check number of files in dir**\
+`ls -1 | wc -l`
 
 
 **Untar / Unzip**\
