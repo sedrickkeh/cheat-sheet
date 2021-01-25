@@ -22,7 +22,7 @@ venv:
 conda:
 `conda create -n env python=3.6 pip`
 
-**Github**\
+**Git**\
 Setting username and user email:\
 `git config user.name (your_username_here)`\
 `git config user.email (your_email_here)`
@@ -30,6 +30,9 @@ Setting username and user email:\
 Creating repo:\
 `git remote add origin [git-url-here]`\
 `git push --set-upstream origin master`
+
+Undo commit: \
+`git reset HEAD^`
 
 **Python os**\
 Create path if doesn't exist: 
