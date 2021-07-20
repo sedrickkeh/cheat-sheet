@@ -53,6 +53,13 @@ Undo commit:
 git reset HEAD^
 ```
 
+Delete branches:
+```bash
+git fetch --prune
+git branch -d the_local_branch
+```
+
+
 
 ## Python
 Create path if doesn't exist: 
