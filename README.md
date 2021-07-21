@@ -53,6 +53,11 @@ Undo commit:
 git reset HEAD^
 ```
 
+Pushing:
+```bash
+git push --set-upstream origin (branch_name)
+```
+
 Delete branches:
 ```bash
 git fetch --prune
