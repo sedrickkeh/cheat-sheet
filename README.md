@@ -72,3 +72,21 @@ Create path if doesn't exist:
 if not os.path.exists(savepath):
     os.makedirs(savepath)
 ```
+
+
+## Wandb
+Initialize:
+``` bash
+wandb.init(project="coherence-detection", entity="shizhe-sedrick")
+wandb.config.update(args)
+```
+
+Watch model:
+``` bash
+wandb.watch(model)
+```
+
+Logging results:
+``` bash
+wandb.log(dict_of_results)
+```
