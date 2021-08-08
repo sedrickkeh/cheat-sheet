@@ -77,7 +77,7 @@ if not os.path.exists(savepath):
 ## Wandb
 Initialize:
 ``` bash
-wandb.init(project="coherence-detection", entity="shizhe-sedrick")
+wandb.init(project="(project-name)", entity="(user/team-name)")
 wandb.config.update(args)
 ```
 
