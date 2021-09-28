@@ -73,6 +73,19 @@ if not os.path.exists(savepath):
     os.makedirs(savepath)
 ```
 
+Read from txt file
+```bash
+with open("input.txt", "r") as f:
+    for line in f.readlines():
+        arr.append(line.strip())
+```
+
+List to txt file:
+```bash
+with open("output.txt", "w") as f:
+    for line in arr:
+        f.write(line+'\n')
+```
 
 ## Wandb
 Initialize:
