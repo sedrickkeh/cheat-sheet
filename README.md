@@ -103,3 +103,9 @@ Logging results:
 ``` bash
 wandb.log(dict_of_results)
 ```
+
+## Gdown (wget from Google Drive)
+```bash
+pip install gdown
+gdown https://drive.google.com/uc?id=(insert_id_here)
+```
