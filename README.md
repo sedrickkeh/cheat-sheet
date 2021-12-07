@@ -87,6 +87,12 @@ with open("output.txt", "w") as f:
         f.write(line+'\n')
 ```
 
+Read json list of dicts 
+```bash
+with open("input.json", 'r') as f:
+    arr = list(map(json.loads, f))
+```
+
 ## Wandb
 Initialize:
 ``` bash
