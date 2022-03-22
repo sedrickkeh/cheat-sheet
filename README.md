@@ -115,3 +115,18 @@ wandb.log(dict_of_results)
 pip install gdown
 gdown https://drive.google.com/uc?id=(insert_id_here)
 ```
+
+## Random shuffle/split 
+Torch:
+```bash
+train_len = train_data.shape[0]
+val_len = int(train_len * 0.2)
+train_len -= val_len
+train_dataset, val_dataset = torch.utils.data.random_split(train_dataset, [train_len, val_len])
+```
+
+Lists:
+```bash
+from sklearn.model_selection import train_test_split
+X_train, X_val, y_train, y_val = train_test_split(x, y, test_size=0.2, random_state=42)
+```
