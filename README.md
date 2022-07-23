@@ -130,3 +130,9 @@ Lists:
 from sklearn.model_selection import train_test_split
 X_train, X_val, y_train, y_val = train_test_split(x, y, test_size=0.2, random_state=42)
 ```
+
+## BERTScore 
+```bash
+P,R,F = score([cand], [ref], lang="en", rescale_with_baseline=True)
+score = F[0].item()
+```
