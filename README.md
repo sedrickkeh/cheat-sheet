@@ -138,3 +138,10 @@ def get_bertscore(cand, ref):
     P,R,F = score([cand], [ref], lang="en", rescale_with_baseline=True)
     return F[0].item()
 ```
+
+## LaTeX
+Multiline in a table cell:
+```
+\newcommand{\twoline}[2]{\begin{tabular}[t]{@{}c@{}}#1\\#2\end{tabular}}
+(usage: \twoline{line-1}{line-2} )
+```
