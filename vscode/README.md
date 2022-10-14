@@ -19,7 +19,14 @@ Host (server-name)
 - If it exists already, you need to add the contents of `<myhost>_rsa.pub` to the end of the file.
 - If it does not exist you can use the `<myhost>_rsa.pub` and rename it to `authorized_keys` with permissions of 600.
 
-4. On your local machine, run 
+4. On the remote server, change the permissions as follows:
+```bash
+chmod 700 ~/.ssh
+chmod 600 ~/.ssh/authorized_keys
+```
+
+5. (Not sure if this step is actually needed)
+On your local machine, run 
 ```bash
 ssh-agent bash
 ssh-add ~/.ssh/(name-of-rsa-private-key)
