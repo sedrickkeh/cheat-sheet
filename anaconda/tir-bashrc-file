@@ -2,9 +2,10 @@
 # !! Contents within this block are managed by 'conda init' !!
 # <<< conda initialize <<<
 
+# export PATH="~/anaconda3/bin:$PATH"  # commented out by conda initialize
 
 alias conda-clean="sed -i 3,13d .bashrc"
-alias conda-setup="conda init; source .bashrc; conda-clean;"
+alias conda-setup="PATH='~/anaconda3/bin:$PATH'; conda init; source .bashrc; conda-clean;"
 
 alias check-processes="ps -u skeh"
 alias kill-processes="killall -u skeh"
