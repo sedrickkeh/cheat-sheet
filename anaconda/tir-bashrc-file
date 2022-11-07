@@ -1,0 +1,23 @@
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+# <<< conda initialize <<<
+
+
+alias conda-clean="sed -i 3,13d .bashrc"
+alias conda-setup="conda init; source .bashrc; conda-clean;"
+
+alias check-processes="ps -u skeh"
+alias kill-processes="killall -u skeh"
+alias which-node="echo $SLURM_NODELIST"
+
+alias gpu-list="echo 'v100,a100,titanx,2080ti,3090,rtx8000,a6000'"
+SLOW_NODES="tir-0-32,tir-0-36,tir-1-32"
+alias connect-gpu="srun --exclude $SLOW_NODES --gres=gpu:1 --time=1-00:00:00 --mem=32G --pty bash"
+alias connect-nogpu="srun --exclude $SLOW_NODES --time=1-00:00:00 --mem=32G --pty bash"
+alias connect-titanx="srun --exclude $SLOW_NODES --gres=gpu:TITANX:1 --time=1-00:00:00 --mem=32G --pty bash"
+alias connect-2080ti="srun --exclude $SLOW_NODES --gres=gpu:2080Ti:1 --time=1-00:00:00 --mem=32G --pty bash"
+alias connect-v100="srun --exclude $SLOW_NODES --gres=gpu:v100:1 --time=1-00:00:00 --mem=32G --pty bash"
+alias connect-3090="srun --exclude $SLOW_NODES --gres=gpu:3090:1 --time=1-00:00:00 --mem=32G --pty bash"
+alias connect-rtx8000="srun --exclude $SLOW_NODES --gres=gpu:RTX_8000:1 --time=1-00:00:00 --mem=32G --pty bash"
+alias connect-a100="srun --exclude $SLOW_NODES --gres=gpu:a100:1 --time=1-00:00:00 --mem=32G --pty bash"
+alias connect-a6000="srun --exclude $SLOW_NODES --gres=gpu:A6000:1 --time=1-00:00:00 --mem=32G --pty bash"
