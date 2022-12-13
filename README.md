@@ -38,6 +38,7 @@ conda create -n (name) python=3.6 pip`
 ## Git
 Setting username and user email:
 ```bash
+git config --global credential.helper store (Note: use git token)
 git config user.name (your_username_here)
 git config user.email (your_email_here)
 ```
