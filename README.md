@@ -15,7 +15,15 @@ df -hl
 ```bash
 ls -1 | wc -l
 ```
-
+**Check running processes**
+```bash
+# All processes
+ps -aux         
+# All processes for a specific user
+ps -u (user-id)
+# Identify owner of process
+ps -u -p (pid)
+```
 
 **Untar / Unzip**
 ```bash
