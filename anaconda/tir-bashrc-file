@@ -10,6 +10,7 @@ alias conda-setup="PATH='~/anaconda3/bin:$PATH'; conda init; source .bashrc; con
 alias check-processes="ps -u skeh"
 alias kill-processes="killall -u skeh"
 alias which-node="echo $SLURM_NODELIST"
+alias which-gpu="echo $SLURM_NODELIST"
 
 alias gpu-list="echo 'v100,a100,titanx,2080ti,3090,rtx8000,a6000'"
 SLOW_NODES="tir-0-32,tir-0-36,tir-1-32,tir-1-36"
