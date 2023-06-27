@@ -1,8 +1,25 @@
 # [AWS EC2 Setup](https://console.aws.amazon.com)
 
+Login to AWS Console: 
+```bash
+aws configure
+```
+
 Creating an instance from the command line:
 ```bash
 while ! aws --profile (profile-name) ec2 run-instances --image-id (ami-xxx) --count 1 --instance-type p4de.24xlarge --key-name (key-name) --security-group-ids (sg-xxx) --submet-id (subnet-xxx) --block-device-mappings "DeviceName=/dev/sdf, Ebs={DeleteOnTermination=true, Iops=3000, VolumeSize=1000, VolumeType=gp3, Encrypted=false}" ; do echo "..."; sleep 30; done;
+```
+
+Note that if a special role is required, you need to edit `.aws/config` and add a profile:
+```
+[default]
+    region = us-east-1
+    output = json
+
+[profile-ml]
+    role_arn = (role-id)
+    region = us-east-1
+    source_profile = default
 ```
 
 EBS Setup
