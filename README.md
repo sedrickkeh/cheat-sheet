@@ -23,6 +23,14 @@ ps -aux
 ps -u (user-id)
 # Identify owner of process
 ps -u -p (pid)
+# List my processes
+ps -f
+# List all my python processes
+ps -f | grep python
+# Kill all my Python processses
+ps -f | grep python | grep -v "grep" | awk '{print $2}' | xargs kill -9
+# Kill all Python processes
+pkill -9 python
 ```
 
 **Untar / Unzip**
